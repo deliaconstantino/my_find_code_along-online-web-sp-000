@@ -7,7 +7,7 @@ def my_find(collection)
   while i < collection.length
     if yield(collection[i]) == true
       new_array << collection[i]
-      bind
+      binding.pry
     end
     i += 1
   end
