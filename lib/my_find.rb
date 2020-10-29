@@ -7,10 +7,12 @@ def my_find(collection)
   while i < collection.length
     if yield(collection[i]) == true
       new_array << collection[i]
-    
+
     end
     i += 1
   end
+
+  new_array
 
   if new_array.length > 0
     new_array
