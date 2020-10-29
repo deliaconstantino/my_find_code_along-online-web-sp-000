@@ -15,7 +15,7 @@ def my_find(collection)
   new_array
 
   if new_array.length > 0
-    new_array
+    new_array.first
   else
     nil
   end
