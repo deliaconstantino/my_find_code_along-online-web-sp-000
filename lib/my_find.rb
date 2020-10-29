@@ -9,21 +9,17 @@ def my_find(collection)
       new_array << collection[i]
       if new_array.length > 0
         return new_array.first
-      else
       end
     end
     i += 1
-
-    if new_array.length > 0
-      return new_array.first
-    else
-      return nil
-    end
   end
-
-
-
+    nil
+  
 end
+
+
+
+
 
 #using a while loop, check/find elements that match a certain condition.
 #return those that match as a new array and return nil if none of the org array match the condition
