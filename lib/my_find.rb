@@ -10,10 +10,15 @@ def my_find(collection)
       if new_array.length > 0
         return new_array.first
       else
-        return nil
       end
     end
     i += 1
+
+    if new_array.length > 0
+      return new_array.first
+    else
+      return nil
+    end
   end
 
 
