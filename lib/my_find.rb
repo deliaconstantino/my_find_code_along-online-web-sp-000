@@ -7,16 +7,17 @@ def my_find(collection)
   while i < collection.length
     if yield(collection[i])
       new_array << collection[i]
+      if new_array.length > 0
+        return new_array.first
+      else
+        return nil
+      end
     end
     i += 1
   end
 
 
-  if new_array.length > 0
-    new_array.first
-  else
-    nil
-  end
+
 end
 
 #using a while loop, check/find elements that match a certain condition.
