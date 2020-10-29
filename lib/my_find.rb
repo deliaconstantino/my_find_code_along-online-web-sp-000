@@ -5,7 +5,6 @@ def my_find(collection)
   new_array = []
 
   while i < collection.length
-
     if yield(collection[i]) == true
       new_array << collection[i]
     end
