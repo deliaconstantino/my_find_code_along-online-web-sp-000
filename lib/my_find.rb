@@ -1,19 +1,7 @@
 require 'pry'
 
 def my_find(collection)
-  i = 0
-  new_array = []
 
-  while i < collection.length
-    if yield(collection[i])
-      new_array << collection[i]
-      if new_array.length > 0
-        return new_array.first
-      end
-    end
-    i += 1
-  end
-    nil
 
 end
 
